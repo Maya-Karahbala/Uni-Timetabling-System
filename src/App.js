@@ -101,7 +101,7 @@ class App extends React.Component {
         {cellsComponents}
        
       </GridLayout>
-      <h1>test</h1>
+    
        
        </>
     );
