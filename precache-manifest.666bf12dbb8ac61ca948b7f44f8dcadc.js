@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e1e96345d9a93e5b4d84667055afcae4",
+    "revision": "b281eb4c82d019a9178c10196f7c7ee9",
     "url": "/Uni-Timetabling-System/index.html"
   },
   {
