@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Uni-Timetabling-System/static/css/main.c5e4a391.chunk.css",
+    "main.js": "/Uni-Timetabling-System/static/js/main.ee32b2f5.chunk.js",
+    "main.js.map": "/Uni-Timetabling-System/static/js/main.ee32b2f5.chunk.js.map",
+    "runtime-main.js": "/Uni-Timetabling-System/static/js/runtime-main.c0da76a6.js",
+    "runtime-main.js.map": "/Uni-Timetabling-System/static/js/runtime-main.c0da76a6.js.map",
+    "static/js/2.87952853.chunk.js": "/Uni-Timetabling-System/static/js/2.87952853.chunk.js",
+    "static/js/2.87952853.chunk.js.map": "/Uni-Timetabling-System/static/js/2.87952853.chunk.js.map",
+    "index.html": "/Uni-Timetabling-System/index.html",
+    "precache-manifest.96bace051d271b03405f0bec457b821d.js": "/Uni-Timetabling-System/precache-manifest.96bace051d271b03405f0bec457b821d.js",
+    "service-worker.js": "/Uni-Timetabling-System/service-worker.js",
+    "static/css/main.c5e4a391.chunk.css.map": "/Uni-Timetabling-System/static/css/main.c5e4a391.chunk.css.map"
+  }
+}
