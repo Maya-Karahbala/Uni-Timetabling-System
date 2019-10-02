@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Modal, Button, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-
+import lectures from "../Data";
 export default class Cell extends Component {
   constructor() {
     super();
@@ -10,6 +10,10 @@ export default class Cell extends Component {
     };
   }
   toggle_details() {
+    let selectedLecture=lectures.filter(item=>{return item.code==this.props.lecture1.code})[0]
+    selectedLecture.AKTS=selectedLecture.AKTS+1
+    console.log(selectedLecture)
+    console.log()
     this.setState(pre_state => {
       return {
         details_is_open: !pre_state.details_is_open
@@ -25,6 +29,7 @@ export default class Cell extends Component {
       class1,
       Number_of_hours,
       academic_term,
+      starting_hour,
       AKTS
     } = this.props.lecture1;
     return (
@@ -32,9 +37,11 @@ export default class Cell extends Component {
         <div>{code}</div>
         <div>{name}</div>
         <div>{class1} </div>
+        <div>{starting_hour} </div>
         <Modal isOpen={this.state.details_is_open}>
           <ModalHeader> Ders Kodu : {code}</ModalHeader>
           <ModalBody>
+            
             <pre>Ders Adı        : {name}</pre>
             <pre>Öğretim Elemanı : {teacher}</pre>
             <pre>Sınıf Adı       : {class1}</pre>

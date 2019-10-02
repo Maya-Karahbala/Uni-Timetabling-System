@@ -8,6 +8,19 @@ import GridLayout from "react-grid-layout";
 import Cell from "./components/Cell";
 
 var layout = [];
+const hours = [
+  "",
+  "09.00-09:50",
+  "10:00-10:50",
+  "11:00-11:50",
+  "12:00-12:50",
+  "13:00-13:50",
+  "14.00-14.50",
+  "15.00-15:50",
+  "16:00-16:50",
+  "17:00-17:50",
+  "18:00-18:50"
+];
 var row = 11,
   colums = 9;
 for (let i = 0; i < row; i++) {
@@ -32,20 +45,18 @@ class App extends React.Component {
       slectures: lectures
     };
   }
+  onDragStop = (layout,oldItem,newItem) => {
+    console.log("old" )
+    console.log(oldItem)
+    console.log("new" )
+    console.log(newItem)
+    let selectedLecture=this.state.slectures.filter(item=>{return item.code==oldItem.i})[0]
+    selectedLecture.starting_hour=Number(hours[newItem.y-1].substring(0,2))
+    
+    this.forceUpdate();
+  };
   render() {
-    const hours = [
-      "",
-      "09.00-09:50",
-      "10:00-10:50",
-      "11:00-11:50",
-      "12:00-12:50",
-      "13:00-13:50",
-      "14.00-14.50",
-      "15.00-15:50",
-      "16:00-16:50",
-      "17:00-17:50",
-      "18:00-18:50"
-    ];
+    
     const headers = this.state.slayout.map(item => {
       //if cell is from (second row) show semester number if cell from first column  show time range
       return item.i < 10 ? (
@@ -66,10 +77,10 @@ class App extends React.Component {
         <div
           key={lecture.code}
           data-grid={{
-            x: lecture.academic_term,
-            y: (lecture.starting_hour % 9) + 2,
-            w: 1,
-            h: lecture.Number_of_hours
+            x: lecture.academic_term,// detrmine colum number 
+            y: (lecture.starting_hour % 9) + 2,// determine row number of cell adding 2 for static rows (headers) starts from 0
+            w: 1,// width of cell
+            h: lecture.Number_of_hours//height of cell depends on lecture hours
           }}
         >
           <Cell lecture1={lecture} />
@@ -82,18 +93,26 @@ class App extends React.Component {
       preventCollision: true,
       layout: this.state.slayout,
       cols: 12,
-     
-      rowHeight: 33,
+      ///isResizable:  false,
+      rowHeight: 44,
       width: 1200
-    };
+     // onDragStart: (oldItem: Griditem )=>console.log(oldItem),
+     // onDrop: (elemParams: { x: number, y: number, e: Event }) => console.log("droped")
+    }
+    
+      
+
     return (
       <>
 
-      <GridLayout className="layout" {...gridProporities}>
+      <GridLayout className="layout" {...gridProporities}
+      onDragStop={this.onDragStop}
+      >
         <div
           key="a"
           data-grid={{ x: 0, y: 0, w: 9, h: 1, static: true }}
           className="headercell"
+
         >
           Pazartesi
         </div>
