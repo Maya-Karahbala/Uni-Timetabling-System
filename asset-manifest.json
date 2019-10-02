@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Uni-Timetabling-System/static/css/main.c5e4a391.chunk.css",
-    "main.js": "/Uni-Timetabling-System/static/js/main.ee32b2f5.chunk.js",
-    "main.js.map": "/Uni-Timetabling-System/static/js/main.ee32b2f5.chunk.js.map",
+    "main.js": "/Uni-Timetabling-System/static/js/main.24c7813b.chunk.js",
+    "main.js.map": "/Uni-Timetabling-System/static/js/main.24c7813b.chunk.js.map",
     "runtime-main.js": "/Uni-Timetabling-System/static/js/runtime-main.c0da76a6.js",
     "runtime-main.js.map": "/Uni-Timetabling-System/static/js/runtime-main.c0da76a6.js.map",
     "static/js/2.87952853.chunk.js": "/Uni-Timetabling-System/static/js/2.87952853.chunk.js",
     "static/js/2.87952853.chunk.js.map": "/Uni-Timetabling-System/static/js/2.87952853.chunk.js.map",
     "index.html": "/Uni-Timetabling-System/index.html",
-    "precache-manifest.96bace051d271b03405f0bec457b821d.js": "/Uni-Timetabling-System/precache-manifest.96bace051d271b03405f0bec457b821d.js",
+    "precache-manifest.3ad682bba07fc79334ca7451c23e51f0.js": "/Uni-Timetabling-System/precache-manifest.3ad682bba07fc79334ca7451c23e51f0.js",
     "service-worker.js": "/Uni-Timetabling-System/service-worker.js",
     "static/css/main.c5e4a391.chunk.css.map": "/Uni-Timetabling-System/static/css/main.c5e4a391.chunk.css.map"
   }

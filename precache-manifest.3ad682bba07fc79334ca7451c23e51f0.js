@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f6871c7d2cc056c18c08db750cbb142",
+    "revision": "e1e96345d9a93e5b4d84667055afcae4",
     "url": "/Uni-Timetabling-System/index.html"
   },
   {
-    "revision": "df429d5b0fb5fdaa1775",
+    "revision": "e6d8413b1a62700e1940",
     "url": "/Uni-Timetabling-System/static/css/main.c5e4a391.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Uni-Timetabling-System/static/js/2.87952853.chunk.js"
   },
   {
-    "revision": "df429d5b0fb5fdaa1775",
-    "url": "/Uni-Timetabling-System/static/js/main.ee32b2f5.chunk.js"
+    "revision": "e6d8413b1a62700e1940",
+    "url": "/Uni-Timetabling-System/static/js/main.24c7813b.chunk.js"
   },
   {
     "revision": "15406b867988e988371f",
