@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Uni-Timetabling-System/precache-manifest.666bf12dbb8ac61ca948b7f44f8dcadc.js"
+  "/Uni-Timetabling-System/precache-manifest.a91c75419915962819f754f1c6e3918d.js"
 );
 
 self.addEventListener('message', (event) => {
